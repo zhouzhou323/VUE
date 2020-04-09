@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div id="app">
+    <h1>{{message}}</h1>
+    <h2>{{name}}</h2>
+</div>
+<script src="../js/vue.js"></script>
+<script>
+        //let(variable)/const(constant)
+        //编程范式：声明式编程  原生js的做法：命令式编程
+        //响应式
+        const app = new Vue({
+            el:'#app', //用于挂载要管理的元素
+            data:{//定义数据，可以直接定义或从服务器加载
+                message:'hello,wanqing',
+                name:'beauty'
+            }
+    })
+</script>
+</body>
+</html>

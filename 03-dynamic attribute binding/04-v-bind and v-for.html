@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    .active {
+      color:palevioletred;
+    }
+  </style>
+</head>
+<body>
+<div id="app">
+  <ul>
+    <li v-for="(item, index) in singers" v-on:click="isClick" :class="isClicked()">{{index}}-{{item}}</li>
+  </ul>
+</div>
+
+<script src="../js/vue.js"></script>
+<script>
+  const app = new Vue({
+    el: '#app',
+    data: {
+      message: 'hello',
+      singers: ['Jay', 'Jolin', 'JJ Lin'],
+      isActive: true
+    },
+    methods: {
+      isClick: function(){
+        this.isActive = !this.isActive
+      },
+      isClicked: function(){
+        return {active: this.isActive}
+      }
+    }
+  })
+</script>
+</body>
+</html>

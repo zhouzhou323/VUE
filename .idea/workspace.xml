@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="50fe8e78-d2f9-43dc-96b9-435c23c5498f" name="Default Changelist" comment="" />
+    <list default="true" id="50fe8e78-d2f9-43dc-96b9-435c23c5498f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,8 +30,8 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="editing.templates" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../BASE" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -60,7 +62,9 @@
       <workItem from="1585214732821" duration="3283000" />
       <workItem from="1585548724822" duration="10949000" />
       <workItem from="1585712938172" duration="5471000" />
-      <workItem from="1586416140544" duration="964000" />
+      <workItem from="1586416140544" duration="3995000" />
+      <workItem from="1586795081245" duration="762000" />
+      <workItem from="1586870204943" duration="27000" />
     </task>
     <servers />
   </component>
@@ -72,13 +76,13 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="403" y="130" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.680@0.0.1280.680" timestamp="1584425389159" />
-    <state x="421" y="96" key="FileChooserDialogImpl" timestamp="1586419212689">
+    <state x="421" y="96" key="FileChooserDialogImpl" timestamp="1586870228556">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1586419212689" />
-    <state x="81" y="0" key="SettingsEditor" timestamp="1585216658415">
+    <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1586870228556" />
+    <state x="81" y="0" key="SettingsEditor" timestamp="1586426939056">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="81" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1585216658415" />
+    <state x="81" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1586426939056" />
   </component>
 </project>

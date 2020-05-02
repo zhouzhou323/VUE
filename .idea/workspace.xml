@@ -1,7 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="50fe8e78-d2f9-43dc-96b9-435c23c5498f" name="Default Changelist" comment="" />
+    <list default="true" id="50fe8e78-d2f9-43dc-96b9-435c23c5498f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/09-v-model/01-v-model-basic.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/09-v-model/02-v-model-radio.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/09-v-model/03-v-model-checkbox.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/09-v-model/04-v-model-select.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/09-v-model/05-v-model-modifier.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10-组件化/01-组件化的基本使用.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10-组件化/02-父组件和子组件.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10-组件化/03-组件的语法糖注册方式.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10-组件化/04-组件模板的分离写法.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10-组件化/05-组件中的data.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10-组件化/06-父组件向子组件传递.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10-组件化/07-父传子props驼峰标识.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10-组件化/08-子传父.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10-组件化/09-父子组件通信counter案例练习.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-2.6.11.zip" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,7 +35,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1ZFC6UPEaefJdAhZFNGLyI78AbE" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -28,12 +47,16 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/10-组件化" />
     <property name="settings.editor.selected.configurable" value="editing.templates" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Code\VUE\10-组件化" />
       <recent name="D:\VUE\js" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Code\VUE" />
     </key>
   </component>
   <component name="RunManager">
@@ -61,6 +84,8 @@
       <workItem from="1585548724822" duration="10949000" />
       <workItem from="1585712938172" duration="5471000" />
       <workItem from="1586416140544" duration="964000" />
+      <workItem from="1588316021732" duration="10362000" />
+      <workItem from="1588391126742" duration="12516000" />
     </task>
     <servers />
   </component>
@@ -72,13 +97,21 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="403" y="130" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.680@0.0.1280.680" timestamp="1584425389159" />
+    <state x="250" y="0" key="CommitChangelistDialog2" timestamp="1588434566832">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="250" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1588434566832" />
     <state x="421" y="96" key="FileChooserDialogImpl" timestamp="1586419212689">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1586419212689" />
-    <state x="81" y="0" key="SettingsEditor" timestamp="1585216658415">
+    <state x="81" y="0" key="SettingsEditor" timestamp="1588318900907">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="81" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1585216658415" />
+    <state x="81" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1588318900907" />
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1588413784364">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1588413784364" />
   </component>
 </project>

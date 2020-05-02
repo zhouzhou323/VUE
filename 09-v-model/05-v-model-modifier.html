@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>v-model修饰符</title>
+</head>
+<body>
+<div id="app">
+<!--    1.lazy修饰符-->
+    <input type="text" v-model.lazy="message">
+    <h2>{{message}}</h2>
+
+<!--    2.number修饰符-->
+    <input type="number" v-model.number="age">
+    <h2>{{age}}--{{typeof age}}</h2>
+
+<!--    3.trim修饰符-->
+    <input type="text" v-model.trim="name">
+<!--    可能浏览器显示会自动把空格去掉，f12看console就会发现其实有很多空格-->
+    <h2>{{name}}</h2>
+</div>
+
+<script src="../js/vue.js"></script>
+<script>
+    const app = new Vue({
+        el:'#app',
+        data:{
+            message: 'hello',
+            age:18,
+            name:''
+        },
+        methods:{}
+    })
+</script>
+</body>
+</html>

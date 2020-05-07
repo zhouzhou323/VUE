@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="../js/vue.js"></script>
+</head>
+
+<body>
+  <div id="app">
+    <cpn><button>案例</button></cpn>
+    <cpn><span>哈哈哈</span></cpn>
+    <cpn>
+      <i>xixixi</i>
+      <div> div element</div>
+      <p>one more insert</p>
+    </cpn>
+    <cpn></cpn>
+  </div>
+
+  <template id='cpn'>
+    <diiv>
+      <h2>我是组件</h2>
+      <p>我是组件哈哈哈哈</p>
+      <slot>
+        <!-- 当某一种情况出现较多时可设置一个默认值，如果不往slot里添加则显示为默认值，否则会覆盖 -->
+        <button>案例</button>
+      </slot>
+    </diiv>
+  </template>
+
+  <script>
+    const app = new Vue({
+      el: '#app',
+      data: {},
+      methods: {},
+      components:{
+        cpn:{
+          template:'#cpn'
+        }
+      }
+    });
+  </script>
+</body>
+
+</html>

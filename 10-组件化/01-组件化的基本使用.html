@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--一定要有id="app"，否则无效，因为必须在实例内使用-->
+<div id="app">
+<!--    3.使用组件-->
+    <my-cpn></my-cpn>
+    <my-cpn></my-cpn>
+    <my-cpn></my-cpn>
+    <my-cpn></my-cpn>
+
+    <cpn></cpn>
+
+    <div>
+        <my-cpn></my-cpn>
+    </div>
+</div>
+<!--不在vue实例内则无效-->
+<!--<my-cpn></my-cpn>-->
+
+<div id="app2">
+    <my-cpn></my-cpn>
+<!--    没有被渲染出来，因为是局部组件
+<cpn></cpn>-->
+</div>
+<script src="../js/vue.js"></script>
+<script>
+    // 补充：ES6可以使用``,这样换行更方便
+    // const str1 = 'abc' +
+    //         'cde';
+    // const st2 = `abd
+    // det`
+    // 1.创建组件构造器对象
+    const cpnC = Vue.extend({
+        template: `
+    <div>
+        <h2>我是标题</h2>
+        <p>我是内容哈哈哈哈哈</p>
+    </div>`
+    })
+
+    // 2.注册组件（全局组件，意味着可以在多个vue实例下使用）
+    Vue.component('my-cpn',cpnC)
+
+    const app = new Vue({
+        el:'#app',
+        data:{
+            message: 'hello'
+        },
+        methods:{},
+        components:{
+            // 局部组件
+            cpn: cpnC
+        }
+    })
+
+    const app2 = new Vue({
+        el:'#app2'
+    })
+</script>
+</body>
+</html>

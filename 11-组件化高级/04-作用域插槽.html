@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="../js/vue.js"></script>
+</head>
+
+<body>
+  <div id="app">
+    <cpn></cpn>
+
+    <cpn>
+      <!-- 目的是获取子组件中的pLanguages -->
+      <template slot-scope='slot'>
+        <!-- <span v-for='item in slot.data'>{{item}} - </span> -->
+        <span>{{slot.data.join('*')}}</span>
+      </template>
+    </cpn>
+
+    <cpn></cpn>
+  </div>
+
+  <template id='cpn'>
+    <div>
+      <slot :data='pLanguages'>
+      <ul>
+        <li v-for='p in pLanguages'>{{p}}</li>
+      </ul>
+      </slot>
+    </div>
+  </template>
+
+  <script>
+    const app = new Vue({
+      el: '#app',
+      data: {
+        isShow: true
+      },
+      methods: {},
+      components:{
+        cpn:{
+          template: '#cpn',
+          data(){
+            return {
+              pLanguages:['Java','Python','C#','C++','JavaScript']
+            }
+          }
+        }
+      }
+    });
+  </script>
+</body>
+
+</html>

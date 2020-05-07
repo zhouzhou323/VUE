@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="../js/vue.js"></script>
+</head>
+
+<body>
+  <div id="app">
+    <!-- 会发现用的是在实例里的isShow，也就是true -->
+    <cpn v-show='isShow'></cpn>
+  </div>
+
+  <template id='cpn'>
+    <div>
+      <h2>我是子组件</h2>
+      <!-- 而这里用的是子组件里的isShow，不会渲染出来 -->
+      <button v-show='isShow'></button>
+    </div>
+  </template>
+
+  <script>
+    const app = new Vue({
+      el: '#app',
+      data: {
+        isShow: true
+      },
+      methods: {},
+      components:{
+        cpn:{
+          template: '#cpn',
+          data(){
+            return {
+              isShow: false
+            }
+          }
+        }
+      }
+    });
+  </script>
+</body>
+
+</html>

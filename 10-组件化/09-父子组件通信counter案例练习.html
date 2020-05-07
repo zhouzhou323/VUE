@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>父子组件通信counter案例练习</title>
+</head>
+<body>
+<div id="app">
+    <cpn @add="changeTotal" @sub="changeTotal"></cpn>
+    <h2>点击次数：{{total}}</h2>
+</div>
+
+<template id="child">
+    <div>
+
+        <button @click="add">+</button>
+        <button @click="sub">-</button>
+    </div>
+</template>
+
+<script src="../js/vue.js"></script>
+<script>
+    const cpn = {
+        template: '#child',
+        data(){
+            return {
+                counter:0
+            }
+        },
+        methods:{
+            add(){
+                console.log('add被执行');
+                this.counter++;
+                this.$emit('add',this.counter)
+            },
+            sub(){
+                console.log('sub被执行');
+                this.counter--;
+                this.$emit('sub',this.counter)
+            },
+        }
+    }
+
+    const app = new Vue({
+        el:'#app',
+        data:{
+            total: 0
+        },
+        components:{
+            cpn
+        },
+        methods:{
+            changeTotal(counter){
+                this.total=counter
+            }
+        }
+    })
+</script>
+</body>
+</html>

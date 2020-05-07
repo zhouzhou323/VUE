@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+<!--    1.单选-->
+    <select name="abc" v-model="fruit">
+        <option value="apple">apple</option>
+        <option value="banana">banana</option>
+        <option value="pear">pear</option>
+        <option value="peach">peach</option>
+    </select>
+    <h2>your choose:{{fruit}}</h2>
+<!--    2.多选-->
+<!--    <select name="abc" v-model="fruits" multiple>-->
+<!--        <option value="apple">apple</option>-->
+<!--        <option value="banana">banana</option>-->
+<!--        <option value="pear">pear</option>-->
+<!--        <option value="peach">peach</option>-->
+<!--    </select>-->
+<!--    <h2>your choose:{{fruits}}</h2>-->
+
+    <select v-model="fruits" multiple>
+        <option v-for="choice in fruitChoice" :value="choice">{{choice}}</option>
+    </select>
+    <h2>your choose:{{fruits}}</h2>
+</div>
+
+<script src="../js/vue.js"></script>
+<script>
+    const app = new Vue({
+        el:'#app',
+        data:{
+            message: 'hello',
+            fruit:'apple',
+            fruits:[],
+            fruitChoice:['apple','pear','banana','peach','pineapple']
+        },
+        methods:{}
+    })
+</script>
+</body>
+</html>
